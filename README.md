@@ -29,9 +29,33 @@ mfa_project/
 └─ README.md
 ```
 
-## Installation
+## Environment Setup
 
-1. Prerequisites
-  * Python 3.8+
-  * MFA (Montreal Forced Aligner)
-  * Praat (for alignment visualization)
+1. Using Conda Base Environment
+   ```bash
+   conda activate base
+   ```
+2. Install MFA
+   ``` bash
+   conda install -c conda-forge montreal-forced-aligner
+   ```
+
+## Preparing Data
+   1. Organize Corpus
+      * Ensure that the dataset folder follows the following structure
+      ```
+      corpus/
+      ├─ F2BJRLP1.wav
+      ├─ F2BJRLP1.txt
+      ├─ F2BJRLP2.wav
+      ├─ F2BJRLP2.txt
+      └─ ...
+      ```
+      * Each .txt file should contain the exact transcript for its corresponding .wav file
+
+   2. Normalize transcripts
+      * Since the dictionary uses lowercase words, all transcripts must be made lowercase. Additionally, white spaces and punctuation are also removed.
+        ''' bash
+        python scripts/normalize_transcripts.py corpus/
+        '''
+      * This overwrites each .txt file with a lowercase, cleaned version compatible with MFA
