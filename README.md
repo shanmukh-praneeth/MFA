@@ -24,6 +24,8 @@ mfa/
 │   ├─ dictionary/
 │   │   └─ english_us_arpa.dict
 │   └─ cache.json
+├─ transcripts/           # Consists of all transcripts files provided
+├─ wav/                   # Consists of all audio files provided
 ├─ MFA_Assignment.pdf     # Report consisting of model/dictionary brief, alignment analysis and alignment visualization using Praat
 └─ README.md
 ```
