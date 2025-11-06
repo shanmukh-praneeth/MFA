@@ -32,8 +32,6 @@ mfa_project/
 ## Installation
 
 1. Prerequisites
-  Python 3.8+
-
-  MFA (Montreal Forced Aligner)
-
-  Praat (for alignment visualization)
+  * Python 3.8+
+  * MFA (Montreal Forced Aligner)
+  * Praat (for alignment visualization)
