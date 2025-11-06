@@ -50,7 +50,10 @@ mfa/
       ├─ F2BJRLP2.txt
       └─ ...
       ```
-
+      * The following bash command can be used to create a corpus folder with an MFA-required structure
+      ``` bash
+      mkdir -p corpus
+      ```
       ```bash
       for f in wav/*.wav; do
          b=$(basename "$f" .wav);
