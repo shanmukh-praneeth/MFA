@@ -5,7 +5,7 @@ Forced alignment automatically matches speech audio with its phonetic transcript
 ## Project Structure
 
 ```
-mfa_project/
+mfa/
 ├─ corpus/                      # Contains .wav and .txt (transcripts are normalized and overwritten)
 │   ├─ F2BJRLP1.wav
 │   ├─ F2BJRLP1.txt
@@ -23,9 +23,8 @@ mfa_project/
 │   │   └─ english_us_arpa.zip
 │   ├─ dictionary/
 │   │   └─ english_us_arpa.dict
-│   ├─ g2p/
-│   │   └─ english_us_g2p.zip
 │   └─ cache.json
+├─ MFA_Assignment.pdf     # Report consisting of model/dictionary brief, alignment analysis and alignment visualization using Praat
 └─ README.md
 ```
 
@@ -51,6 +50,14 @@ mfa_project/
       ├─ F2BJRLP2.txt
       └─ ...
       ```
+
+      ```bash
+      for f in wav/*.wav; do
+         b=$(basename "$f" .wav);
+         cp "$f" "corpus/${b}.wav";
+         cp "transcripts/${b}.txt" "corpus/${b}.txt";
+      done
+      ```
       * Each .txt file should contain the exact transcript for its corresponding .wav file
 
    2. Normalize transcripts
@@ -64,3 +71,4 @@ mfa_project/
    ``` bash
    mfa align corpus english_us_arpa english_us_arpa outputs/aligned
    ```
+   
