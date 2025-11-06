@@ -10,20 +10,20 @@ mfa/
 │   ├─ F2BJRLP1.wav
 │   ├─ F2BJRLP1.txt
 │   └─ ...
-├─ outputs/
-│   ├─ aligned/                 # Output folder containing alignments
-│   │   ├─ F2BJRLP1.TextGrid
-│   │   ├─ F2BJRLP2.TextGrid
-│   │   ├─ alignment_analysis.csv
-│   │   └─ ...
-├─ scripts/
-│   ├─ normalize_transcripts.py # Script to normalize text transcripts
 ├─ models/                      # Models and resources used by MFA
 │   ├─ acoustic/
 │   │   └─ english_us_arpa.zip
 │   ├─ dictionary/
 │   │   └─ english_us_arpa.dict
 │   └─ cache.json
+├─ outputs/
+│   ├─ aligned/                 # Output folder containing alignments and alignment_analysis.csv
+│   │   ├─ F2BJRLP1.TextGrid
+│   │   ├─ F2BJRLP2.TextGrid
+│   │   ├─ alignment_analysis.csv
+│   │   └─ ...
+├─ scripts/
+│   ├─ normalize_transcripts.py # Script to normalize text transcripts
 ├─ transcripts/           # Consists of all transcripts files provided
 ├─ wav/                   # Consists of all audio files provided
 ├─ MFA_Assignment.pdf     # Report consisting of model/dictionary brief, alignment analysis and alignment visualization using Praat
