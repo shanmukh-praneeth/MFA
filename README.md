@@ -61,6 +61,6 @@ mfa_project/
       * This overwrites each .txt file with a lowercase, cleaned version compatible with MFA
 
 ## Running Forced Alignment
-      ``` bash
-      mfa align corpus english_us_arpa english_us_arpa outputs/aligned
-      ```
+   ``` bash
+   mfa align corpus english_us_arpa english_us_arpa outputs/aligned
+   ```
