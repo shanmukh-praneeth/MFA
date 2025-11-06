@@ -38,7 +38,19 @@ mfa/
    ```
 2. Install MFA
    ``` bash
-   conda install -c conda-forge montreal-forced-aligner
+   conda create -n aligner -c conda-forge montreal-forced-aligner
+   ```
+3. Shift to the aligner environment
+   ``` bash
+   conda activate aligner
+   ```
+4. Download the Acoustic model
+   ```bash
+   mfa model download acoustic english_us_arpa
+   ```
+5. Download the pronunciation dictionary
+   ``` bash
+   mfa model download dictionary english_us_arpa
    ```
 
 ## Preparing Data
