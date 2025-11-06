@@ -55,7 +55,7 @@ mfa_project/
 
    2. Normalize transcripts
       * Since the dictionary uses lowercase words, all transcripts must be made lowercase. Additionally, white spaces and punctuation are also removed.
-        ''' bash
-        python scripts/normalize_transcripts.py corpus/
-        '''
+        ``` bash
+         python scripts/normalize_transcripts.py corpus/
+        ```
       * This overwrites each .txt file with a lowercase, cleaned version compatible with MFA
